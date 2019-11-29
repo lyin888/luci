@@ -684,7 +684,6 @@
 		<tr><td width="33%"><%:Hostname%></td><td><%=luci.sys.hostname() or "?"%></td></tr>
 		<tr><td width="33%"><%:Model%></td><td><%=pcdata(boardinfo.model or "?")%></td></tr>
 		<tr><td width="33%"><%:CPU Architecture%></td><td><%=pcdata(boardinfo.system or "?")%></td></tr>
-		<tr><td width="33%"><%:CpuMark%></td><td><%=luci.sys.exec("cat /etc/bench.log") or " "%></td></tr>
 		<tr><td width="33%"><%:Cpu Clock%></td><td><%=print (luci.sys.exec("sed -n '1p' /tmp/log/inform"))%>MHz</td></tr>
 		<tr><td width="33%"><%:CPU Usage%></td><td id="cpuusage">-</td></tr>
 		<tr><td width="33%"><%:RAM Clock%></td><td><%=print (luci.sys.exec("sed -n '2p' /tmp/log/inform"))%>MHz</td></tr>
